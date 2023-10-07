@@ -1,0 +1,5 @@
+/* 在CSS文件中样式化标题栏 */
+.title-bar {
+    -fx-background-color: yellow; /* 设置背景颜色为黄色 */
+    -fx-padding: 10px; /* 设置内边距 */
+}
