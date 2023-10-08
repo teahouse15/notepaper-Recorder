@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,8 +18,9 @@ public class WorkRecorder extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage stage) {
         try {
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/main.fxml"));
             Parent root = loader.load();
 
@@ -27,9 +29,13 @@ public class WorkRecorder extends Application {
 
             scene.getStylesheets().add(getClass().getResource("fxml/css/main.css").toExternalForm());
 
-            primaryStage.setScene(scene);
-            primaryStage.setTitle("Your Title");
-            primaryStage.show();
+            // 窗口配置
+            stage.setResizable(false);
+            // 设置无边框
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setScene(scene);
+            stage.setTitle("Your Title");
+            stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
