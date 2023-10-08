@@ -1,0 +1,26 @@
+.button-bar {
+    -fx-min-height: 40px;
+    -fx-min-width: 400px;
+}
+
+.button-bar Button {
+    -fx-background-color: transparent; /* 取消背景颜色 */
+    -fx-border-color: transparent; /* 取消边框颜色 */
+    -fx-text-fill: black; /* 设置文本颜色为黑色，你可以根据需要更改颜色 */
+    -fx-font-size: 12px; /* 设置字体大小，你可以根据需要更改大小 */
+    -fx-font-weight: normal; /* 取消粗体效果，如果按钮原来是粗体的 */
+    -fx-padding: 5px 10px; /* 设置内边距，你可以根据需要更改大小 */
+    -fx-background-insets: 0; /* 取消背景内边距 */
+    -fx-background-radius: 0; /* 取消背景圆角 */
+}
+
+.title-bar {
+    -fx-background-color: yellow; /* 设置背景颜色为黄色 */
+    /*-fx-padding: 10px; !* 设置内边距 *!*/
+    -fx-min-height: 80px;
+    -fx-min-width: 420px;
+}
+
+.record-bar {
+
+}
