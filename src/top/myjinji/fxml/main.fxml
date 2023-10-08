@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane prefWidth="400"
+            prefHeight="600"
+            xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml">
+    <!-- 标题栏 -->
+    <VBox >
+        <!-- 标题文本和其他标题栏元素 -->
+        <Label styleClass="title-bar"></Label>
+
+        <!-- 数据部分（列表数据） -->
+        <ListView fx:id="listView">
+            <!-- 列表项内容 -->
+        </ListView>
+    </VBox>
+</BorderPane>

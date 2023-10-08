@@ -4,10 +4,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 public class WorkRecorder extends Application {
 
@@ -18,14 +19,13 @@ public class WorkRecorder extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("./fxml/WorkRecorder.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/main.fxml"));
             Parent root = loader.load();
 
 
             Scene scene = new Scene(root);
 
-            // 引用CSS文件
-            scene.getStylesheets().add(getClass().getResource("./css/main.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("fxml/css/main.css").toExternalForm());
 
             primaryStage.setScene(scene);
             primaryStage.setTitle("Your Title");
