@@ -14,12 +14,12 @@
     <children>
 
 <!--    按钮    -->
-        <HBox>
+        <HBox styleClass="button-bar">
 
         </HBox>
 
 <!--    标题栏    -->
-        <HBox>
+        <HBox styleClass="title-bar">
 
         </HBox>
 
