@@ -34,6 +34,7 @@ public class ButtonController {
     @FXML
     // 处理固定按钮点击事件的逻辑
     private void handleCloseButtonClick(ActionEvent event) {
+        System.out.println(1);
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
 //        Platform.exit();

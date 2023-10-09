@@ -10,24 +10,36 @@
 <?import javafx.scene.control.ButtonBar?>
 
 
-<VBox prefWidth="400"
-      prefHeight="600"
-      xmlns="http://javafx.com/javafx/16"
-      xmlns:fx="http://javafx.com/fxml">
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.geometry.Insets?>
+<StackPane prefWidth="400"
+           prefHeight="600"
+           xmlns="http://javafx.com/javafx/16"
+           xmlns:fx="http://javafx.com/fxml">
+    <VBox>
+<!--        <children>-->
+            <!--    按钮    -->
+            <fx:include source="button.fxml" />
 
-    <children>
+            <!--    标题栏    -->
+            <HBox styleClass="title-bar">
 
-<!--    按钮    -->
-        <fx:include source="button.fxml" />
+            </HBox>
 
-<!--    标题栏    -->
-        <HBox styleClass="title-bar">
+            <!--    数据主体    -->
+            <ListView styleClass="record-bar">
 
-        </HBox>
+            </ListView>
+<!--        </children>-->
+    </VBox>
+    <!-- 包装按钮的 AnchorPane，设置按钮在右下角 -->
+    <AnchorPane >
+        <Button text="Button" layoutX="300" layoutY="500" />
 
-<!--    数据主体    -->
-        <ListView styleClass="record-bar">
+    </AnchorPane>
+</StackPane>
 
-        </ListView>
-    </children>
-</VBox>
+
+
+
