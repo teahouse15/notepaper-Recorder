@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.geometry.Insets?>
+<?import java.lang.String?>
+<AnchorPane prefWidth="400"
+            prefHeight="600"
+            xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <VBox>
+        <!--    按钮    -->
+        <fx:include source="button.fxml" />
+
+        <!--    标题栏    -->
+        <HBox styleClass="title-bar">
+        </HBox>
+
+        <!--    数据主体    -->
+        <ListView styleClass="record-bar">
+            <items>
+                <String>Item 1</String>
+                <String>Item 2</String>
+                <String>Item 3</String>
+            </items>
+        </ListView>
+    </VBox>
+    <Button text="Click Me" layoutX="300.0" layoutY="500.0" />
+</AnchorPane >
+
+
+
