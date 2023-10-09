@@ -1,6 +1,7 @@
 .button-bar {
     -fx-min-height: 40px;
     -fx-min-width: 400px;
+    -fx-background-color: white;
 }
 
 .button-bar Button {
@@ -24,4 +25,5 @@
 .record-bar {
     -fx-min-height: 480px;
     -fx-min-width: 400px;
+    -fx-background-color: red;
 }

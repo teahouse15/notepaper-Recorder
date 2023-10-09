@@ -18,7 +18,6 @@ public class WorkRecorder extends Application {
     @Override
     public void start(Stage stage) {
         try {
-
             FXMLLoader loader = new FXMLLoader(WorkRecorder.class.getResource("/fxml/main.fxml"));
             Parent root = loader.load();
 

@@ -28,13 +28,7 @@
         </HBox>
 
         <!--    数据主体    -->
-        <ListView styleClass="record-bar">
-            <items>
-                <String>Item 1</String>
-                <String>Item 2</String>
-                <String>Item 3</String>
-            </items>
-        </ListView>
+        <fx:include source="list.fxml" />
     </VBox>
     <Button text="Click Me" layoutX="300.0" layoutY="500.0" />
 </AnchorPane >
