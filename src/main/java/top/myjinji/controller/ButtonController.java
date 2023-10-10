@@ -15,7 +15,6 @@ public class ButtonController {
     @FXML
     private Button closeButton;
 
-
     @FXML
     // 处理固定按钮点击事件的逻辑
     private void handleBlockButtonClick(ActionEvent event) {

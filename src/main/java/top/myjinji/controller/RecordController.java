@@ -5,6 +5,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 
+import org.json.JSONObject;
+
 public class RecordController {
 
     @FXML
@@ -12,8 +14,19 @@ public class RecordController {
 
 
     public void initialize() {
-        // 设置ListView的数据模型并添加数据项
-        ObservableList<String> data = FXCollections.observableArrayList("Item 1", "Item 2", "Item 3");
+        // 创建JSON对象
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("username", "zq");
+        jsonObject.put("age", "13");
+        jsonObject.put("num", "188");
+
+        // 将JSON对象转换为字符串
+        String jsonString = jsonObject.toString();
+
+        // 创建ObservableList并将JSON字符串作为一个item添加
+        ObservableList<String> data = FXCollections.observableArrayList(jsonString);
+
+        // 设置ListView的数据模型
         listView.setItems(data);
     }
 }

@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
 <HBox xmlns:fx="http://javafx.com/fxml" styleClass="button-bar" fx:controller="top.myjinji.controller.ButtonController">
+
+    <Button text="按钮图标" style="-fx-background-color: red">
+        <graphic>
+            <FontIcon fill="white" iconLiteral="fa-address-book"/>
+        </graphic>
+    </Button>
+
     <ButtonBar ButtonBar.buttonData="RIGHT">
         <buttons>
             <Button fx:id="blockButton" onAction="#handleBlockButtonClick" text="T" />
