@@ -13,8 +13,16 @@
                     <FontIcon iconLiteral="win10-pin-3"/>
                 </graphic>
             </Button>
-            <Button fx:id="minButton" onAction="#handleMinButtonClick" text="—" />
-            <Button fx:id="closeButton" onAction="#handleCloseButtonClick" text="X" />
+            <Button fx:id="minButton" onAction="#handleMinButtonClick">
+                <graphic>
+                    <FontIcon iconLiteral="anto-line"/>
+                </graphic>
+            </Button>
+            <Button fx:id="closeButton" onAction="#handleCloseButtonClick">
+                <graphic>
+                    <FontIcon iconLiteral="anto-close"/>
+                </graphic>
+            </Button>
         </buttons>
     </ButtonBar>
 
