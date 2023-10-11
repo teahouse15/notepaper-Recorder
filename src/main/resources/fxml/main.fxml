@@ -14,6 +14,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.geometry.Insets?>
 <?import java.lang.String?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 <AnchorPane prefWidth="400"
             prefHeight="600"
             xmlns="http://javafx.com/javafx/16"
@@ -30,7 +31,11 @@
         <!--    数据主体    -->
         <fx:include source="list.fxml" />
     </VBox>
-    <Button text="Click Me" layoutX="300.0" layoutY="500.0" />
+    <Button layoutX="300.0" layoutY="500.0">
+        <graphic>
+            <FontIcon iconLiteral="win10-plus"></FontIcon>
+        </graphic>
+    </Button>
 </AnchorPane >
 
 

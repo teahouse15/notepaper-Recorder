@@ -18,10 +18,12 @@ public class WorkRecorder extends Application {
     @Override
     public void start(Stage stage) {
         try {
+
+            // 从fxml文件中读取Parent(布局)
             FXMLLoader loader = new FXMLLoader(WorkRecorder.class.getResource("/fxml/main.fxml"));
             Parent root = loader.load();
 
-
+            // 场景
             Scene scene = new Scene(root);
 
             scene.getStylesheets().add(WorkRecorder.class.getResource("/fxml/css/main.css").toExternalForm());

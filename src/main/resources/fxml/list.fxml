@@ -6,8 +6,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<ListView xmlns:fx="http://javafx.com/fxml"
-          styleClass="record-bar"
-          fx:controller="top.myjinji.controller.RecordController"
-          fx:id="listView">
-</ListView>
+<VBox>
+
+</VBox>
