@@ -6,6 +6,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox>
+<VBox styleClass="record-bar">
 
 </VBox>

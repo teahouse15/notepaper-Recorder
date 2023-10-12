@@ -1,29 +1,37 @@
+.notepaper {
+    -fx-background-color: transparent;
+    -fx-border-color: #000000; /* 边框颜色，可以根据需要修改 */
+    -fx-border-width: 1; /* 边框宽度，可以根据需要修改 */
+    -fx-border-radius: 10; /* 圆角半径，可以根据需要修改 */
+}
+
+
 .button-bar {
     -fx-min-height: 40px;
-    -fx-min-width: 400px;
-    -fx-background-color: white;
+    -fx-min-width: 300px;
+    -fx-background-color: #FFF2AB;
 }
 
 .button-bar Button {
+    -fx-min-width: 50px;
+    -fx-min-height: 40px;
     -fx-background-color: transparent; /* 取消背景颜色 */
     -fx-border-color: transparent; /* 取消边框颜色 */
     -fx-text-fill: black; /* 设置文本颜色为黑色，你可以根据需要更改颜色 */
-    -fx-font-size: 12px; /* 设置字体大小，你可以根据需要更改大小 */
+    -fx-font-size: 20px; /* 设置字体大小，你可以根据需要更改大小 */
     -fx-font-weight: normal; /* 取消粗体效果，如果按钮原来是粗体的 */
-    -fx-padding: 5px 10px; /* 设置内边距，你可以根据需要更改大小 */
     -fx-background-insets: 0; /* 取消背景内边距 */
     -fx-background-radius: 0; /* 取消背景圆角 */
+    -fx-padding: 0;
 }
 
-.title-bar {
-    -fx-background-color: yellow; /* 设置背景颜色为黄色 */
-    /*-fx-padding: 10px; !* 设置内边距 *!*/
-    -fx-min-height: 80px;
-    -fx-min-width: 420px;
+.button-bar Button:hover {
+    -fx-background-color: #EEE2A0; /* 修改为悬停时的背景颜色，此处为金色 */
 }
+
 
 .record-bar {
     -fx-min-height: 480px;
-    -fx-min-width: 400px;
-    -fx-background-color: red;
+    -fx-background-color: #FFF7D1;
+    -fx-min-width: 300px;
 }

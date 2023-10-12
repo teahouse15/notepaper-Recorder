@@ -6,24 +6,21 @@
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
 <HBox xmlns:fx="http://javafx.com/fxml" styleClass="button-bar" fx:controller="top.myjinji.controller.ButtonController">
-    <ButtonBar ButtonBar.buttonData="RIGHT">
-        <buttons>
-            <Button fx:id="blockButton" onAction="#handleBlockButtonClick">
-                <graphic>
-                    <FontIcon iconLiteral="win10-pin-3"/>
-                </graphic>
-            </Button>
-            <Button fx:id="minButton" onAction="#handleMinButtonClick">
-                <graphic>
-                    <FontIcon iconLiteral="anto-line"/>
-                </graphic>
-            </Button>
-            <Button fx:id="closeButton" onAction="#handleCloseButtonClick">
-                <graphic>
-                    <FontIcon iconLiteral="anto-close"/>
-                </graphic>
-            </Button>
-        </buttons>
-    </ButtonBar>
+    <Button fx:id="blockButton" onAction="#handleBlockButtonClick">
+        <graphic>
+            <FontIcon iconLiteral="anto-plus"/>
+        </graphic>
+    </Button>
+    <Region HBox.hgrow="ALWAYS" />
+    <Button fx:id="minButton" onAction="#handleMinButtonClick">
+        <graphic>
+            <FontIcon iconLiteral="anto-line"/>
+        </graphic>
+    </Button>
+    <Button fx:id="closeButton" onAction="#handleCloseButtonClick">
+        <graphic>
+            <FontIcon iconLiteral="anto-close"/>
+        </graphic>
+    </Button>
 
 </HBox>
