@@ -6,7 +6,7 @@
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
 <HBox xmlns:fx="http://javafx.com/fxml" styleClass="button-bar" fx:controller="top.myjinji.controller.ButtonController">
-    <Button fx:id="blockButton" onAction="#handleBlockButtonClick">
+    <Button fx:id="addButton" onAction="#addLabel">
         <graphic>
             <FontIcon iconLiteral="anto-plus"/>
         </graphic>
