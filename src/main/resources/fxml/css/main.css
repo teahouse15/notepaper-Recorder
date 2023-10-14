@@ -31,7 +31,7 @@
 
 
 .record-bar {
-    -fx-min-height: 480px;
+    -fx-min-height: 360px;
     -fx-background-color: #FFF7D1;
     -fx-min-width: 300px;
 }

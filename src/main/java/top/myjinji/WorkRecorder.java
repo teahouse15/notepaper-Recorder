@@ -6,8 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import top.myjinji.controller.ButtonController;
-import top.myjinji.controller.RecordController;
 
 import java.io.IOException;
 
