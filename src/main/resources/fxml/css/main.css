@@ -1,8 +1,9 @@
 .notepaper {
     -fx-background-color: transparent;
-    -fx-border-color: #000000; /* 边框颜色，可以根据需要修改 */
-    -fx-border-width: 1; /* 边框宽度，可以根据需要修改 */
-    -fx-border-radius: 10; /* 圆角半径，可以根据需要修改 */
+    /*-fx-border-color: #000000; !* 边框颜色，可以根据需要修改 *!*/
+    /*-fx-border-width: 1; !* 边框宽度，可以根据需要修改 *!*/
+    /*-fx-border-radius: 10; !* 圆角半径，可以根据需要修改 *!*/
+    -fx-padding: 0;
 }
 
 
@@ -22,13 +23,20 @@
     -fx-font-weight: normal; /* 取消粗体效果，如果按钮原来是粗体的 */
     -fx-background-insets: 0; /* 取消背景内边距 */
     -fx-background-radius: 0; /* 取消背景圆角 */
-    -fx-padding: 0;
+    /*-fx-padding: 0;*/
 }
 
 .button-bar Button:hover {
     -fx-background-color: #EEE2A0; /* 修改为悬停时的背景颜色，此处为金色 */
 }
 
+.scroll-pane {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: never;
+}
 
 .record-bar {
     -fx-min-height: 360px;

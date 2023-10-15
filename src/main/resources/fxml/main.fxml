@@ -33,16 +33,13 @@
                     <FontIcon iconLiteral="anto-close"/>
                 </graphic>
             </Button>
-
         </HBox>
 
-
-
-
-        <ScrollPane prefHeight="360" prefWidth="300">
+        <ScrollPane styleClass="scroll-pane" prefHeight="360" prefWidth="300">
             <content>
                 <!--    数据主体    -->
                 <VBox styleClass="record-bar" fx:id="recordList">
+
                 </VBox>
             </content>
         </ScrollPane>
