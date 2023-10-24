@@ -6,7 +6,6 @@
     -fx-padding: 0;
 }
 
-
 .button-bar {
     -fx-min-height: 40px;
     -fx-min-width: 300px;
@@ -22,8 +21,8 @@
     -fx-font-size: 20px; /* 设置字体大小，你可以根据需要更改大小 */
     -fx-font-weight: normal; /* 取消粗体效果，如果按钮原来是粗体的 */
     -fx-background-insets: 0; /* 取消背景内边距 */
-    -fx-background-radius: 0; /* 取消背景圆角 */
-    /*-fx-padding: 0;*/
+    -fx-background-radius: 0;
+    -fx-padding: 0;
 }
 
 .button-bar Button:hover {
@@ -34,7 +33,7 @@
     -fx-padding: 0;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
-    -fx-hbar-policy: never;
+    -fx-hbar-policy: never; /* 滚动条不显示 */
     -fx-vbar-policy: never;
 }
 

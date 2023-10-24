@@ -20,6 +20,11 @@ public class MainController {
 
     @FXML
     private void handleAddButtonClick(ActionEvent event) {
+
+
+
+
+
         recordList.getChildren().add(new Label("123"));
     }
 
