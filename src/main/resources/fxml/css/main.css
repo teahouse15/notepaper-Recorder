@@ -41,4 +41,12 @@
     -fx-min-height: 360px;
     -fx-background-color: #FFF7D1;
     -fx-min-width: 300px;
+    -fx-padding: 15px;
+}
+
+.record-item {
+    -fx-background-color: #FFF7D1; /* 设置背景颜色 */
+    -fx-text-fill: #000000; /* 设置文本颜色 */
+    -fx-border-width: 0 0 1 0; /* 设置边框宽度 */
+    -fx-border-color: #000000; /* 设置边框颜色 */
 }

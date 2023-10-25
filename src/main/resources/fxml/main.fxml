@@ -16,7 +16,7 @@
 
     <VBox>
         <!--    按钮    -->
-        <HBox styleClass="button-bar">
+        <HBox styleClass="button-bar" spacing="0">
             <Button fx:id="addButton" onAction="#handleAddButtonClick">
                 <graphic>
                     <FontIcon iconLiteral="anto-plus"/>
@@ -35,7 +35,7 @@
             </Button>
         </HBox>
 
-        <ScrollPane styleClass="scroll-pane" prefHeight="360" prefWidth="300">
+        <ScrollPane styleClass="scroll-pane" prefHeight="360" prefWidth="300" VBox.vgrow="ALWAYS">
             <content>
                 <!--    数据主体    -->
                 <VBox styleClass="record-bar" fx:id="recordList">
